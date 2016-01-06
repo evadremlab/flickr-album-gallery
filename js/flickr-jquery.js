@@ -50,13 +50,19 @@
             }, this));
         };
 
+      /**
+       * evadremlab - add "data-description" to <a> tag, needed by modified jquery.blueimp-gallery
+       */
         this._printGallery = function(photos) {
             var element = this.element.find('.gallery-container');
             $.each(photos, function(key, photo) {
-                var img = $('<img>', { 'class': 'thumb img-thumbnail flickr-img-responsive', src: photo.thumbnail });
-                element.append($('<div></div>', { 'class': ' col-md-3 col-sm-4 col-center weblizar-flickr-div' })
-                    .append($('<a></a>', { 'class': '', title: photo.title, href: photo.href, 'data-gallery': '' }).hide()
-                        .append(img)));
+              var img = $('<img>', { 'class': 'thumb img-thumbnail flickr-img-responsive', src: photo.thumbnail });
+              element.append($('<div></div>', { 'class': ' col-md-3 col-sm-4 col-center weblizar-flickr-div' })
+                .append($('<a></a>', { 'class': '', title: photo.title, href: photo.href, 'data-gallery': '', 'data-description': photo.description }).hide()
+                  .append(img)
+                // uncomment to add description to bottom of image
+                //.append($('<div></div>', { 'class': 'flickr-description' }).text(photo.description))
+              ));
             });
 
             element.imagesLoaded()
@@ -64,6 +70,9 @@
                 .always($.proxy(this._hideSpinner, this));
         };
 
+      /**
+       * evadremlab - add description property.
+       */
         this._flickrPhotoset = function(photoset) {
             var _this = this;
             
@@ -77,7 +86,8 @@
                 photos[photoset.id][key] = {
                     thumbnail: 'http://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_q.jpg',
                     href: 'http://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_b.jpg',
-					title: photo.title
+					          title: photo.title,
+                    description: photo.description._content
                 };
             });
 
@@ -109,9 +119,13 @@
             });
         };
 
+      /**
+       * evadremlab - request description property.
+       */
         this._flickrInit = function () {
             this._flickrRequest('flickr.photosets.getPhotos', {
-                photoset_id: this.settings.photosetId
+                photoset_id: this.settings.photosetId,
+                extras: 'description'
             });
         };
 
