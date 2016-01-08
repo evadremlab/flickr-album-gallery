@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Flickr Album Gallery
- * Version: 1.3
- * Description: Simply easy to publish your Flickr photo albums on your WrodPress blog site
- * Author: Weblizar
- * Author URI: https://weblizar.com/plugins/flickr-album-gallery-pro/
- * Plugin URI: https://weblizar.com/plugins/flickr-album-gallery-pro/
+ * Version: 1.3.1
+ * Description: Simply easy to publish your Flickr photo albums on your WordPress blog site
+ * Author: Weblizar, modified by evadremlab
+ * Author URI: https://github.com/evadremlab/flickr-album-gallery/
+ * Plugin URI: https://github.com/evadremlab/flickr-album-gallery/
  */
  
 /**

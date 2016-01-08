@@ -43,3 +43,12 @@ footer .flickr-notice {
 	font-style: italic;
 	font-size: 0.9em;
 }
+
+.weblizar-powered-by {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-size: small;
+  text-align: center;
+}

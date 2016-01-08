@@ -121,7 +121,7 @@ function FlickerAlbumGalleryShortCode( $Id ) {
 			});
 			</script>
 			
-			<div align="center" style="font-size: small; margin-bottom:20px; margin-top:25px; width:100%; float: left;">
+			<div class="weblizar-powered-by">
 				Flickr Album Gallery Powered By: <a href="http://www.weblizar.com/" target="_blank">Weblizar</a>
 			</div>
 			<?php
