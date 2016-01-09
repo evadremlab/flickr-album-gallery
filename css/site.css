@@ -2,13 +2,13 @@
     cursor: pointer;
 }
 .spinner {
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    background: url("../img/spinner.gif");
+    background: url("../img/loading.gif");
     background-position: center center;
     background-repeat: no-repeat;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 
