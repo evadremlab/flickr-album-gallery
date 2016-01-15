@@ -3,7 +3,7 @@
  * Plugin Name: Flickr Album Gallery
  * Version: 1.3.1
  * Description: Simply easy to publish your Flickr photo albums on your WordPress blog site
- * Author: Weblizar, modified by evadremlab
+ * Author: Weblizar, modified by evadremlab to fetch and display descriptions
  * Author URI: https://github.com/evadremlab/flickr-album-gallery/
  * Plugin URI: https://github.com/evadremlab/flickr-album-gallery/
  */
@@ -51,7 +51,7 @@ define("FAG_PLUGIN_URL", plugin_dir_url(__FILE__));
 			'not_found_in_trash' => __( 'No Album Galleries Found in Trash', 'fa_gallery' ),
 			'parent_item_colon' => __( 'Parent Album Gallery:', 'fa_gallery' ),
 			'all_items' => __( 'All Album Galleries', 'fa_gallery' ),
-			'menu_name' => _x( 'Flickr Album Gallery', 'fa_gallery' ),
+			'menu_name' => _x( 'Flickr Gallery', 'fa_gallery' ),
 		);
 
 		$args = array(

@@ -91,6 +91,9 @@ Using **[FAG id=xx]** shortcode, you can publish Flickr Album Gallery into any P
 
 For more information, see [Weblizar](http://wwww.weblizar.com/).
 
+= 1.3.1 Jan 2016
+* modified by evadremlab to fetch and display descriptions
+
 = 1.3 21 Nov 2015 =
 * Latest WordPress 4.4 Compatibility Check
 * Russian Translation added in 1.3
